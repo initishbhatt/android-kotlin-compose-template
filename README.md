@@ -1,9 +1,9 @@
 # kotlin-android-compose-template
 
-A simple Github template to create an **Android/Kotlin**, **compose** ready project.
+A simple Github template to create an **Android/Kotlin**, **Compose** ready project.
 
-A major chunk of development time is taken up by setting up **DSL** , **static analysis** and **CI**,
-this template is made with an aime to reduce this redundant work and be ready with a working repository where all these are handled
+A major chunk of development time is taken up by setting up **DSL**, **static analysis** and **CI**.
+This template is made with an aime to reduce this redundant work and be ready with a working repository where all these are handled
 
 ## How to use
 
