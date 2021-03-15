@@ -1,5 +1,7 @@
 # kotlin-android-compose-template
 
+![Workflow result](https://github.com/initishbhatt/android-kotlin-compose-template/workflows/pr_merge/badge.svg)
+
 A simple Github template to create an **Android/Kotlin**, **Compose** ready project.
 
 A major chunk of development time is taken up by setting up **DSL**, **static analysis** and **CI**.
@@ -24,6 +26,9 @@ Once created don't forget to update the:
 - Sample Espresso, Instrumentation & JUnit tests.
 - Kotlin Static Analysis via `ktlint`.
 - `Spotless` for code formatting.
+- CI Setup with GitHub Actions.
+- Issues Template (bug report + feature request). 
+- Pull Request Template.
 
 ## Gradle Setup 
 This template uses [**Gradle Kotlin DSL**](https://docs.gradle.org/current/userguide/kotlin_dsl.html)
