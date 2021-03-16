@@ -23,7 +23,7 @@ Once created don't forget to update the:
 - **Compose-Ready** 
 - Gradle Kotlin DSL setup.
 - Dependency versions managed via `buildSrc`.
-- Sample Espresso, Instrumentation & JUnit tests.
+- Sample Compose Test.
 - Kotlin Static Analysis via `ktlint`.
 - `Spotless` for code formatting.
 - CI Setup with GitHub Actions.

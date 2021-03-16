@@ -84,14 +84,14 @@ object Libs {
         private const val retrofitVersion = "2.9.0"
         private const val okhttpVersion = "4.8.1"
         private const val moshiVersion = "1.11.0"
-        const val retrofit = "com.squareup.retrofit2:retrofit:${retrofitVersion}"
-        const val okhttp = "com.squareup.okhttp3:okhttp:${okhttpVersion}"
+        const val retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+        const val okhttp = "com.squareup.okhttp3:okhttp:$okhttpVersion"
         const val okhttpIntercepter =
-            "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}"
+            "com.squareup.okhttp3:logging-interceptor:$okhttpVersion"
         const val moshi = "com.squareup.moshi:moshi:$moshiVersion"
         const val moshiCodegen = "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
         const val moshiConverter =
-            "com.squareup.retrofit2:converter-moshi:${retrofitVersion}"
+            "com.squareup.retrofit2:converter-moshi:$retrofitVersion"
     }
 
     object Timber {
@@ -106,7 +106,3 @@ object Libs {
         const val applicationId = "com.template"
     }
 }
-
-
-
-

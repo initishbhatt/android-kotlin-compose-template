@@ -59,7 +59,6 @@ android {
 dependencies {
     implementation(Libs.Kotlin.stdlib)
 
-    //compose
     implementation(Libs.AndroidX.Activity.activityCompose)
     implementation(Libs.AndroidX.Compose.runtime)
     implementation(Libs.AndroidX.Compose.foundation)
@@ -68,5 +67,10 @@ dependencies {
     implementation(Libs.AndroidX.Compose.animation)
     implementation(Libs.AndroidX.Compose.tooling)
     implementation(Libs.AndroidX.Lifecycle.viewModelCompose)
+
+    androidTestImplementation(Libs.AndroidX.Compose.uiTest)
+    androidTestImplementation(Libs.AndroidX.Test.rules)
+    androidTestImplementation(Libs.AndroidX.Test.runner)
+    androidTestImplementation(Libs.AndroidX.Test.Ext.junit)
 
 }
