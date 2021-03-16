@@ -248,6 +248,7 @@ gradle-app.setting
 /*/*/production
 *.ipr
 *.swp
+.idea/*
 
 # Android Patch
 
