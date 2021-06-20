@@ -4,11 +4,11 @@ plugins {
     id("kotlin-kapt")
 }
 android {
-    compileSdkVersion(Libs.App.compileSdkVersion)
+    compileSdk = Libs.App.compileSdkVersion
     defaultConfig {
         applicationId = Libs.App.applicationId
-        minSdkVersion(Libs.App.minSdkVersion)
-        targetSdkVersion(Libs.App.targetSdkVersion)
+        minSdk = Libs.App.minSdkVersion
+        targetSdk = Libs.App.targetSdkVersion
         versionCode = ReleaseConfig.appVersionCode
         versionName = ReleaseConfig.appVersionName
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

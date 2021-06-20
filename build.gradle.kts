@@ -20,14 +20,13 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter()
     }
     spotless {
         kotlin {
             target("**/*.kt")
             targetExclude("$buildDir/**/*.kt")
             targetExclude("bin/**/*.kt")
-            ktlint("0.40.0")
+            ktlint(Libs.ktLintVersion)
         }
     }
 }
