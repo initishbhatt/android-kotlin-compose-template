@@ -5,7 +5,7 @@
 A simple Github template to create an **Android/Kotlin**, **Compose** ready project.
 
 A major chunk of development time is taken up by setting up **DSL**, **static analysis** and **CI**.
-This template is made with an aime to reduce this redundant work and be ready with a working repository where all these are handled
+This template is made with an aim to reduce this redundant work and be ready with a working repository where all these are handled.
 
 ## How to use
 
@@ -43,3 +43,6 @@ This template is using [**ktlint**](https://github.com/pinterest/ktlint) with th
 ## Contributing 
 
 Feel free to open a issue or submit a pull request for any bugs/improvements.
+
+
+> For template without compose i would recommend [**this**](https://github.com/cortinico/kotlin-android-template) template from [Nikola Corti](https://github.com/cortinico)
