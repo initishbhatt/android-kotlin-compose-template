@@ -1,4 +1,4 @@
-package com.nitish.template.ui.theme
+package com.template.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

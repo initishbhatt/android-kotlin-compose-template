@@ -4,7 +4,7 @@ object Libs {
     const val ktLint = "com.pinterest:ktlint:$ktLintVersion"
 
     object Kotlin {
-        private const val version = "1.5.10"
+        private const val version = "1.5.20"
         const val stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$version"
         const val gradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:$version"
         const val extensions = "org.jetbrains.kotlin:kotlin-android-extensions:$version"
@@ -18,12 +18,12 @@ object Libs {
 
     object AndroidX {
         object Activity {
-            const val activityCompose = "androidx.activity:activity-compose:1.3.0-beta02"
+            const val activityCompose = "androidx.activity:activity-compose:1.3.0-rc01"
         }
 
         object Compose {
             const val snapshot = ""
-            const val version = "1.0.0-beta09"
+            const val version = "1.0.0-rc01"
 
             const val runtime = "androidx.compose.runtime:runtime:$version"
             const val runtimeLivedata = "androidx.compose.runtime:runtime-livedata:$version"
@@ -43,12 +43,12 @@ object Libs {
         }
 
         object Test {
-            private const val version = "1.3.0"
+            private const val version = "1.4.0"
             const val runner = "androidx.test:runner:$version"
             const val rules = "androidx.test:rules:$version"
 
             object Ext {
-                private const val version = "1.1.2-rc01"
+                private const val version = "1.1.3"
                 const val junit = "androidx.test.ext:junit-ktx:$version"
             }
 
