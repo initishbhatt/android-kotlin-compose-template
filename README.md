@@ -43,6 +43,3 @@ This template is using [**ktlint**](https://github.com/pinterest/ktlint) with th
 ## Contributing 
 
 Feel free to open a issue or submit a pull request for any bugs/improvements.
-
-
-> For template without compose i would recommend [**this**](https://github.com/cortinico/kotlin-android-template) template from [Nikola Corti](https://github.com/cortinico)

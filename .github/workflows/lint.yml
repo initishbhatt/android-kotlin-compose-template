@@ -1,15 +1,9 @@
-name: pr_merge
-
-on:
-  push:
-    branches:
-      - main
-
+name: Lint
+on: pull_request
 jobs:
-  build:
+  spotless:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -27,7 +21,6 @@ jobs:
         with:
           path: ~/.gradle/wrapper
           key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('**/gradle-wrapper.properties') }}
-
       - name: Fetch Gradle Cache
         uses: actions/cache@v2
         continue-on-error: true
@@ -38,18 +31,11 @@ jobs:
             ~/.gradle/caches/build-cache-*
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/Dependencies.kt') }}
 
-      - name: Build project
-        run: ./gradlew spotlessCheck assembleDebug lintDebug --stacktrace
+      - name: Run Spotless
+        run: ./gradlew spotlessCheck lintDebug --stacktrace
 
-      - name: Upload build outputs (APKs)
-        uses: actions/upload-artifact@v2
+      - name: Lint results
+        uses: actions/upload-artifact@v1
         with:
-          name: build-outputs
-          path: app/build/outputs
-
-      - name: Upload build reports
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: build-reports
-          path: app/build/reports
+          name: app
+          path: app/build/reports/lint-results-debug.html
